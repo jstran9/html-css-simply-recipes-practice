@@ -290,14 +290,17 @@ Navbar
   font-size: 1.25rem;
 }
 .nav-links {
-  height: 0;
-  overflow: hidden;
-  display: flex;
+  /* height: 0; */
+  /* overflow: hidden;
+  display: flex; */
+  display: none;
   flex-direction: column;
   transition: var(--transition);
 }
 .show-links {
-  height: 23.9375rem;
+  /* height: 23.9375rem; */
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-link {
@@ -337,6 +340,7 @@ Navbar
     display: none;
   }
   .nav-links {
+    display: flex;
     height: auto !important;
     flex-direction: row;
     align-items: center;
